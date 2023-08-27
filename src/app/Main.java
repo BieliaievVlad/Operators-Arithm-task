@@ -2,10 +2,10 @@ package app;
 
 public class Main {
 
-    static name;
+    static String name;
     static int quota;
-    static price;
-    double salesAmount;
+    static double price;
+    static double salesAmount;
     static double avgSum;
     static int days;
 
@@ -14,13 +14,13 @@ public class Main {
         name = "Oranges";
         quota = 158;
         price = 2.99;
-        days =
+        days =7;
 
         salesAmount = quota * price;
         System.out.println("Product: " + name + ", sales EUR " + salesAmount);
 
-        avgSum = salesAmount / name;
-        System.out.println("Product: " + name + ", sales by day EUR " + avgSum);
+        avgSum = salesAmount / days;
+        System.out.println("Product: " + name + ", sales by day EUR " + String.format("%.2f ",avgSum));
 
         name = "Apples";
         quota = 117;
@@ -31,7 +31,7 @@ public class Main {
         System.out.println("Product: " + name + ", sales EUR " + salesAmount);
 
         avgSum = salesAmount / days;
-        System.out.println("Product: " +  + ", sales by day EUR " + avgSum);
+        System.out.println("Product: " +  ", sales by day EUR " + String.format("%.2f ",avgSum));
 
     }
 }

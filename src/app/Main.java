@@ -31,7 +31,7 @@ public class Main {
         System.out.println("Product: " + name + ", sales EUR " + salesAmount);
 
         avgSum = salesAmount / days;
-        System.out.println("Product: " +  ", sales by day EUR " + String.format("%.2f ",avgSum));
+        System.out.println("Product: " + name + ", sales by day EUR " + String.format("%.2f ",avgSum));
 
     }
 }
